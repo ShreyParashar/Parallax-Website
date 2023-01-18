@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">Portfolio</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header> 
+    <section>
+        <h5 id="text"><span>My Portfolio</span><br>...Website..</h5>
+        <img src="bird1.png" id="bird1">
+        <img src="bird2.png" id="bird2">
+        <img src="forest.png" id="forest">
+        <a href="" id="btn">Explore</a>
+        <img src="rocks.png" id="rocks">
+        <img src="water.png" id="water">
+    </section>
+    <div class="sec">
+        <h2>About me</h2>
+        <p>
+            A single tree can absorb approximately 1 ton of carbon dioxide during its lifetime”.
+
+This statement in itself describes the role that trees play to maintain the cycle and process that supports different life forms on Earth.<br> Trees, in the presence of sunlight, chlorophyll and water, absorb carbon dioxide from the atmosphere. This proceeds through a chemical reaction to produce glucose and oxygen.
+
+<br><br>Since life runs on the exchange of carbon dioxide and oxygen, trees are inherent to our survival. In addition to this, our daily essentials ranging from books, furniture, medicines to the new piece of summer clothing –  all owe their production in one way or the other, to trees. The country’s economy is indirectly dependent on trees as huge manufacturing units derive their basic elements from them.
+
+<br><br> the ever-growing population, the demand and supply for every other commodity have increased. This has led to detrimental levels of deforestation. The result today is layers of air filled with pollutants, soil losing its strength to erosion and an acute rise in temperature and sea levels worldwide. Our planet has seen varying degrees of diseases, incorporating artificial means to increase production, illegal cutting down of trees from protected areas and much more.
+
+<br><br>The situation, however, needs to be brought under control. A lot of measures, programs and events are organized regularly to create awareness and save trees. But a lot more still needs to be done to increase the prospect of a greener, healthier tomorrow. Trees must be planted not only on World Environment Day but also on every other day. Restrictions need to be imposed on the number of trees that can be cut daily. People in urban as well as rural areas need to be educated about the dire effects of deforestation and most importantly citizens need to take responsibility and accountability for their own selves, if not for the future of their race.
+<br><br>“Save trees, Save lives” should be the motto not only on prescribed calendar dates but also on other “industrious” days of the year!
+        </p>
+    </div>
+    <script>
+        let text = document.getElementById("text");
+        let bird1 = document.getElementById("bird1");
+        let bird2 = document.getElementById("bird2");
+        let btn = document.getElementById("btn");
+        let rocks = document.getElementById("rocks");
+        let forest = document.getElementById("forest");
+        let water = document.getElementById("water");
+        let header = document.getElementById("header");
+        
+        window.addEventListener("scroll", function(){
+            let value = window.scrollY;
+            text.style.top = 50 + value * -0.5 + "%";
+            bird1.style.top = value * -1.5 + "px";
+            bird1.style.left = value * 2 + "px";
+            bird2.style.top = value * -1.5 + "px";
+            bird2.style.left = value * -5 + "px";
+            btn.style.marginTop = value * 1.5 + "px";
+            rocks.style.top = value * -0.12 + "px";
+            forest.style.top = value * 0.25 + "px";
+            water.style.top = value * 0.15 + "px";
+            header.style.top = value * 0.5 + "px";
+        })
+    </script>
+</body>
+</html>
